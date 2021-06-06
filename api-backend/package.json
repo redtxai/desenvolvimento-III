@@ -1,0 +1,12 @@
+{
+  "name": "api-backend",
+  "version": "1.0.0",
+  "description": "API backend",
+  "scripts": {
+    "start": "./node_modules/.bin/json-server --watch db.json"
+  },
+  "author": "redtxai@gmail.com",
+  "devDependencies": {
+    "json-server": "^0.15.1"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "support-tickets": [
+    {
+      "id": 0,
+      "title": "Feature `download` doesn't work",
+      "description": "The feature `download` in the main page of the website doesn't seems to work. The browser crashes after clicking the download button.",
+      "priority": 2,
+      "status": 0,
+      "email": "user1@example.org",
+      "refersTo": [
+        2
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Website is unusable on mobile devices",
+      "description": "When I open the website on a mobile device the layout is messed up.",
+      "priority": 0,
+      "status": 1,
+      "email": "email@example.org",
+      "refersTo": []
+    },
+    {
+      "id": 2,
+      "title": "Browser crashes after clicking the `download` button in the main page",
+      "description": "When I click on the `download` button in the main page the bowser crashes.",
+      "priority": 2,
+      "status": 0,
+      "email": "user2@example.org",
+      "refersTo": [
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Suggestion feedback for statistics page",
+      "description": "It would be useful if the statistics page could incorporate a 3D chart for plotting the statistics values.",
+      "priority": 0,
+      "status": 0,
+      "email": "user5@example.org",
+      "refersTo": [
+        0
+      ]
+    }
+  ]
+}
