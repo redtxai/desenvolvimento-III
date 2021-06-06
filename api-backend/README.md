@@ -9,15 +9,20 @@ npm start
 
 The backend server will then actively listen on [http://localhost:3000](http://localhost:3000) for the the following endpoints:
 ```
-GET    /support-tickets
-GET    /support-tickets/1
-POST   /support-tickets
-PUT    /support-tickets/1
-PATCH  /support-tickets/1
-DELETE /support-tickets/1
+GET    /usuario
+GET    /usuario/1
+POST   /usuario
+PUT    /usuario/1
+PATCH  /usuario/1
+DELETE /usuario/1
 ```
 
 Note: All the changes will be reflected in the `db.json` file.
 It can be used for debugging purposes.
 This backend uses internally https://github.com/typicode/json-server library.
 More information can be found on the github repo.
+
+http://localhost:3000/usuario
+http://localhost:3000/comorbidade
+http://localhost:3000/posto_saude
+http://localhost:3000/noticia

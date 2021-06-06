@@ -1,46 +1,144 @@
 {
-  "support-tickets": [
+  "usuario": [
     {
-      "id": 0,
-      "title": "Feature `download` doesn't work",
-      "description": "The feature `download` in the main page of the website doesn't seems to work. The browser crashes after clicking the download button.",
-      "priority": 2,
-      "status": 0,
-      "email": "user1@example.org",
-      "refersTo": [
-        2
-      ]
+      "cpf": "51550289063",
+      "nome": "Usuário 2",
+      "dtNasc": "01/11/1989",
+      "pode_vacinar": "false",
+      "possui_comorbidade": "false",
+      "senha": "f7XlAmyE!SPK"
     },
     {
-      "id": 1,
-      "title": "Website is unusable on mobile devices",
-      "description": "When I open the website on a mobile device the layout is messed up.",
-      "priority": 0,
-      "status": 1,
-      "email": "email@example.org",
-      "refersTo": []
+      "cpf": "64307546008",
+      "nome": "Usuário 2",
+      "dtNasc": "21/10/1962",
+      "pode_vacinar": "true",
+      "possui_comorbidade": "true",
+      "senha": "*5hPWx1xkhj1"
     },
     {
-      "id": 2,
-      "title": "Browser crashes after clicking the `download` button in the main page",
-      "description": "When I click on the `download` button in the main page the bowser crashes.",
-      "priority": 2,
-      "status": 0,
-      "email": "user2@example.org",
-      "refersTo": [
-        0
-      ]
+      "cpf": "48623245091",
+      "nome": "Usuário 3",
+      "dtNasc": "04/07/1934",
+      "pode_vacinar": "true",
+      "possui_comorbidade": "false",
+      "senha": "SpVWhD*FMK7a"
     },
     {
-      "id": 19,
-      "title": "Suggestion feedback for statistics page",
-      "description": "It would be useful if the statistics page could incorporate a 3D chart for plotting the statistics values.",
-      "priority": 0,
-      "status": 0,
-      "email": "user5@example.org",
-      "refersTo": [
-        0
-      ]
+      "cpf": "00391331094",
+      "nome": "Usuário 4",
+      "dtNasc": "17/05/1952",
+      "pode_vacinar": "true",
+      "possui_comorbidade": "false",
+      "senha": "kEwHvCBr$c!B"
+    },
+    {
+      "cpf": "06904679077",
+      "nome": "Usuário 5",
+      "dtNasc": "16/03/1948",
+      "pode_vacinar": "true",
+      "possui_comorbidade": "false",
+      "senha": "#mGT4*k!tYf6"
+    },
+    {
+      "cpf": "13235976035",
+      "nome": "Usuário 6",
+      "dtNasc": "08/01/1994",
+      "pode_vacinar": "true",
+      "possui_comorbidade": "true",
+      "senha": "BYONgOt%%Hiw"
+    },
+    {
+      "cpf": "41393918042",
+      "nome": "Usuário Teste",
+      "dtNasc": "01/01/2000",
+      "pode_vacinar": "true",
+      "possui_comorbidade": "true",
+      "senha": "senha"
+    }
+  ],
+  "comorbidade": [
+    {
+      "comorbidade_id": 1,
+      "cpf": "64307546008",
+      "condicao_saude": "Paciente diagnosticado com Cadiovasculopatias. Cardiomiopatia assoaciada à obesidade, hipertensão.",
+      "documento_comprobatorio": "R0lGODlhAQABAIAAAP7//wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==",
+      "data_documento": "04/06/2021"
+    },
+    {
+      "comorbidade_id": 2,
+      "cpf": "64307546008",
+      "condicao_saude": "Paciente diagnosticado com Diabetes mellitus não-insulino-dependente. CID: E11 - Diabetes mellitus não-insulino-dependente.",
+      "documento_comprobatorio": "R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+      "data_documento": "02/06/2021"
+    },
+    {
+      "comorbidade_id": 3,
+      "cpf": "64307546008",
+      "condicao_saude": "",
+      "documento_comprobatorio": "R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+      "data_documento": "30/05/2021"
+    },
+    {
+      "comorbidade_id": 4,
+      "cpf": "13235976035",
+      "condicao_saude": "",
+      "documento_comprobatorio": "R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+      "data_documento": "24/05/2021"
+    },
+    {
+      "comorbidade_id": 5,
+      "cpf": "41393918042",
+      "condicao_saude": "Paciente diagnosticado com Cadiovasculopatias. Cardiomiopatia assoaciada à obesidade, hipertensão.",
+      "documento_comprobatorio": "R0lGODlhAQABAIAAAP7//wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==",
+      "data_documento": "6/06/2021"
+    }
+  ],
+  "posto_saude": [
+    {
+      "posto_id": 1,
+      "nome_unidade": "Posto IAPI",
+      "horario_funcionamento": "08:00,18:00"
+    },
+    {
+      "posto_id": 2,
+      "nome_unidade": "Posto Sarandi",
+      "horario_funcionamento": "08:00,18:00"
+    },
+    {
+      "posto_id": 3,
+      "nome_unidade": "Posto Lindoia",
+      "horario_funcionamento": "09:00,16:00"
+    },
+    {
+      "posto_id": 4,
+      "nome_unidade": "Posto Rubem Berta",
+      "horario_funcionamento": "08:30,20:00"
+    },
+    {
+      "posto_id": 5,
+      "nome_unidade": "Posto Parque Santa Fé",
+      "horario_funcionamento": "08:00,18:00"
+    }
+  ],
+  "noticia": [
+    {
+      "noticia_id": 1,
+      "data": "06/06/2021 11:15:23",
+      "titulo": "Porto Alegre alcança 524.562 pessoas vacinadas",
+      "descricao": "O número corresponde a 47,53% da população vacinável da cidade, que se mantém como a capital brasileira que mais imunizou a população até o momento. Sendo que, com duas doses e esquema vacinal completo são 312.316 pessoas."
+    },
+    {
+      "noticia_id": 2,
+      "data": "05/06/2021 13:33:10",
+      "titulo": "Porto Alegre tem intensa procura por vacinação contra Covid-19 neste sábado",
+      "descricao": "Além das Unidades de Saúde, Porto Alegre também tem dois drive-thrus disponíveis para vacinação neste sábado. Segundo a SMS, o drive thru do Big Sertório, no bairro Sarandi, tem movimento tranquilo e nenhum registro de fila."
+    },
+    {
+      "noticia_id": 3,
+      "data": "02/06/2021 12:51:38",
+      "titulo": "Grupos prioritários devem estar vacinados contra a covid-19 em junho, diz Conselho das Secretarias Municipais de Saúde do RS",
+      "descricao": "Municípios gaúchos de pequeno e médio porte devem aplicar em junho a primeira dose em todos os grupos prioritários da campanha de vacinação contra o coronavírus, de acordo com o presidente do Conselho das Secretarias Municipais de Saúde do Rio Grande do Sul (Cosems-RS), Maicon Lemos."
     }
   ]
 }
