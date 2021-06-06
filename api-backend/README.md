@@ -21,8 +21,9 @@ Note: All the changes will be reflected in the `db.json` file.
 It can be used for debugging purposes.
 This backend uses internally https://github.com/typicode/json-server library.
 More information can be found on the github repo.
-
+```
 http://localhost:3000/usuario
 http://localhost:3000/comorbidade
 http://localhost:3000/posto_saude
 http://localhost:3000/noticia
+```
