@@ -1,0 +1,33 @@
+.login-cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  height: 100%;
+
+  h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding-left: 10%;
+  }
+
+  .cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding-left: 10%;
+    border-left: 1px solid #000000;
+  }
+}

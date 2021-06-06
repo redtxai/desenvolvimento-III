@@ -1,0 +1,29 @@
+.app-header-container {
+  display: flex;
+  width: 100vw;
+  height: 120px;
+  background-color: #2287C0;
+
+  .nav-container {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFF0F0;
+
+    & > * {
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+}
