@@ -1,9 +1,9 @@
 <section class="login-cadastro-container">
   <section class="login">
     <h3>LOGIN</h3>
-    <input type="text" placeholder="cpf" />
-    <input type="password" placeholder="senha" />
-    <button>LOGAR</button>
+    <input type="text" placeholder="cpf" [(ngModel)]="cpf"/>
+    <input type="password" placeholder="senha" [(ngModel)]="senha"/>
+    <button (click)=login()>LOGAR</button>
   </section>
   <section class="cadastro">
     <h3>CADASTRO</h3>

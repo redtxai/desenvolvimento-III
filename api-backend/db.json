@@ -1,6 +1,7 @@
 {
   "usuario": [
     {
+      "id": 1,
       "cpf": "51550289063",
       "nome": "Usuário 2",
       "dtNasc": "01/11/1989",
@@ -9,6 +10,7 @@
       "senha": "f7XlAmyE!SPK"
     },
     {
+      "id": 2,
       "cpf": "64307546008",
       "nome": "Usuário 2",
       "dtNasc": "21/10/1962",
@@ -17,6 +19,7 @@
       "senha": "*5hPWx1xkhj1"
     },
     {
+      "id": 3,
       "cpf": "48623245091",
       "nome": "Usuário 3",
       "dtNasc": "04/07/1934",
@@ -25,6 +28,7 @@
       "senha": "SpVWhD*FMK7a"
     },
     {
+      "id": 4,
       "cpf": "00391331094",
       "nome": "Usuário 4",
       "dtNasc": "17/05/1952",
@@ -33,6 +37,7 @@
       "senha": "kEwHvCBr$c!B"
     },
     {
+      "id": 5,
       "cpf": "06904679077",
       "nome": "Usuário 5",
       "dtNasc": "16/03/1948",
@@ -41,6 +46,7 @@
       "senha": "#mGT4*k!tYf6"
     },
     {
+      "id": 6,
       "cpf": "13235976035",
       "nome": "Usuário 6",
       "dtNasc": "08/01/1994",
@@ -49,6 +55,7 @@
       "senha": "BYONgOt%%Hiw"
     },
     {
+      "id": 7,
       "cpf": "41393918042",
       "nome": "Usuário Teste",
       "dtNasc": "01/01/2000",
