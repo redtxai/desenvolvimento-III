@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginCadastro } from './views/login-cadastro/login-cadastro.component';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { ListaPostoComponent } from './views/lista-posto/lista-posto.component';
 
 @NgModule({
@@ -23,6 +23,7 @@ import { ListaPostoComponent } from './views/lista-posto/lista-posto.component';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
+    HttpClientJsonpModule,
     AppHeaderModule
   ],
   providers: [],

@@ -5,12 +5,22 @@
     <input type="password" placeholder="senha" [(ngModel)]="senha"/>
     <button (click)=login()>LOGAR</button>
   </section>
-  <section class="cadastro">
+  <section *ngIf="!stepTwo; else stepTwoBlock" class="cadastro">
     <h3>CADASTRO</h3>
-    <input type="text" placeholder="Nome" />
-    <input type="text" placeholder="cpf" />
-    <input type="password" placeholder="senha" />
-    <input type="password" placeholder="confirmar senha" />
-    <button>CADASTRAR</button>
+    <input type="text" placeholder="cpf" [(ngModel)]="cadastroCpf" />
+    <input type="password" placeholder="senha" [(ngModel)]="cadastroSenha" />
+    <input type="password" placeholder="confirmar senha" [(ngModel)]="confirmarSenha" />
+    <button (click)="goToStepTwo()">CONFIRMAR</button>
   </section>
+  <ng-template #stepTwoBlock>
+    <section class="cadastro">
+      <h3>CADASTRO</h3>
+      <button (click)="goToStepOne()">VOLTAR</button>
+      <input type="text" placeholder="endereço" [(ngModel)]="endereco" />
+      <label>Possui comorbidade? <input type="checkbox" [(ngModel)]="possuiComorbidade" /></label>
+      <input type="text" [disabled]="!possuiComorbidade" placeholder="Condição de saúde" [(ngModel)]="condicaoSaude" />
+      <input type="date" placeholder="Data de Nascimento" [(ngModel)]="dataNascimento" />
+      <button (click)="cadastrar()">CADASTRAR</button>
+    </section>
+  </ng-template>
 </section>

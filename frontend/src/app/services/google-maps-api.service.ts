@@ -1,30 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 
+var md5 = require('md5');
+
 @Injectable({
   providedIn: 'root'
 })
 export class GoogleMapsAPIService {
-  private readonly googleMapsApiURL = 'https://maps.googleapis.com/maps/api/'
-  private readonly distanceModuleName = 'distancematrix'
-  private readonly geocodeModuleName = 'geocode'
-  private readonly apiKey = 'AIzaSyA_S1dfOa1u4cMntv21q3sfnsLDTqF2lNg'
 
   constructor(private http: HttpClient) {}
 
   getGeocodeFromAddress(address: string) {
-    return  this.http.get(this.getURL(this.geocodeModuleName, 'address', address)).subscribe((res: any) => {
-      console.log(res)
-    })
+    return this.getFakeGeocode(address)
   }
 
-  getDistanceBetweenAddresses(addresses: string) {
-    return  this.http.get(this.getURL(this.distanceModuleName, 'origins', addresses)).subscribe((res: any) => {
-      console.log(res)
-    })
-  }
-
-  private getURL(module: string, attr: string, value: string): string {
-    return `${this.googleMapsApiURL}/${module}/json?${attr}=${value}&key=${this.apiKey}`
+  private getFakeGeocode(seed: string) {
+    const geocode = md5(seed).replace(/\D/g, "");
+    return geocode
   }
 }

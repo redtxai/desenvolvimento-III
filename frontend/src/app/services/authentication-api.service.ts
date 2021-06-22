@@ -12,8 +12,10 @@ const module = 'usuario'
 })
 export class AuthenticationAPIService {
   private readonly _users = new BehaviorSubject<Usuario[]>([])
+  private readonly _user = new BehaviorSubject<Usuario>(new Usuario())
 
   readonly users$ = this._users.asObservable()
+  readonly user$ = this._users.asObservable()
 
   constructor(private http: HttpClient) { }
 
@@ -21,12 +23,20 @@ export class AuthenticationAPIService {
     return this._users.getValue()
   }
 
+  get user(): Usuario {
+    return this._user.getValue()
+  }
+
   set users(val: Usuario[]) {
     this._users.next(val)
   }
 
+  set user(val: Usuario) {
+    this._user.next(val)
+  }
+
   verifyUserLogin(cpf: string, senha: string): Usuario | undefined {
-    const user = this.users.find((u) => u.cpf === cpf && u.senha === senha)
+    const user: Usuario | undefined = this.users.find((u) => u.cpf === cpf && u.senha === senha)
     return user
   }
 
@@ -36,35 +46,16 @@ export class AuthenticationAPIService {
     })
   }
 
-  getSingleUser(id: number): Observable<Usuario> {
-    return this.http.get(`${url}/${module}/${id}`).pipe(map(usuario => usuario as Usuario))
+  login(user: Usuario) {
+    this.user = user
   }
 
-  createSingleUser(usuario: Usuario) {
-    this.http.post(`${url}/${module}`, usuario).subscribe(
-      data => {
-        this.getAllUsers()
-      },
-      error => console.log('oops', error)
-    )
+  logout() {
+    this.user = new Usuario()
   }
 
-  removeSingleUser(id: number) {
-    this.http.delete(`${url}/${module}/${id}`).subscribe(
-      data => {
-        this.getAllUsers()
-      },
-      error => console.log('oops', error)
-    )
-  }
-
-  updateSingleUser(usuario: Usuario) {
-    this.http.put(`${url}/${module}/${usuario.id}`, usuario).subscribe(
-      data => {
-        this.getAllUsers()
-      },
-      error => console.log('oops', error)
-    )
+  hasLoggedUser() {
+    return this.user.id || 0
   }
 }
 
