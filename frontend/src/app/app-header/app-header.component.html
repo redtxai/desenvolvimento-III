@@ -3,19 +3,16 @@
     <div class="logo">
       <img src="assets/logo.svg" alt="image" />
     </div>
-    <div class="inicio">
+    <div class="inicio" (click)="navigateTo('inicio')">
       Início
     </div>
-    <div class="feed">
+    <div class="feed" (click)="navigateTo('noticias')">
       Feed
     </div>
     <div class="postos">
       Postos
     </div>
-    <div class="apto">
-      Apto
-    </div>
-    <div class="cadastro-login">
+    <div class="cadastro-login" (click)="navigateTo('login')">
       Cadastro/Login
     </div>
   </div>

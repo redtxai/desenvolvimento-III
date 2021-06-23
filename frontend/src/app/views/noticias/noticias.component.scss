@@ -1,0 +1,43 @@
+.noticias-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+
+  .noticia-container {
+    width: 40%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    padding-top: 20px;
+    border-top: 1px solid black;
+    font-size: 12px;
+
+    .data {
+      position: absolute;
+      right: 0;
+      top: 5px;
+    }
+
+    .read-btn {
+      position: absolute;
+      left: 0;
+      top: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .read > * {
+    font-weight: normal !important;
+  }
+}

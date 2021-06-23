@@ -1,0 +1,10 @@
+<section class="noticias-container">
+  <div *ngFor="let noticia of listaNoticias" class="noticia-container" [class.read]="noticia.read">
+    <h2>{{ noticia.titulo }}</h2>
+    <p>
+      {{ noticia.descricao }}
+    </p>
+    <label class="data">{{ noticia.data }}</label>
+    <label class="read-btn" (click)="noticia.read = true">{{ !noticia.read ? 'Não lida' : 'Lida' }}</label>
+  </div>
+</section>

@@ -9,15 +9,16 @@ import { LoginCadastro } from './views/login-cadastro/login-cadastro.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { ListaPostoComponent } from './views/lista-posto/lista-posto.component';
+import { NoticiasComponent } from './views/noticias/noticias.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginCadastro,
-    ListaPostoComponent
+    ListaPostoComponent,
+    NoticiasComponent
   ],
   imports: [
-    CommonModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
